@@ -1,6 +1,6 @@
 [package]
 name = "bevy_ninepatch"
-version = "0.10.0"
+version = "0.11.0"
 authors = ["François Mockers <mockersf@gmail.com>"]
 edition = "2021"
 description = "Displays 9-Patch UI elements in Bevy"
@@ -13,42 +13,47 @@ readme = "README.md"
 exclude = ["examples/*.png", "examples/*.gif", "*.png", "assets/"]
 
 [dependencies.bevy]
-version = "0.10"
+version = "0.11"
 default-features = false
-features = [ "bevy_ui", "bevy_render", "bevy_sprite", "bevy_asset" ]
+features = ["bevy_ui", "bevy_render", "bevy_sprite", "bevy_asset"]
 
 [dev-dependencies.bevy]
-version = "0.10"
+version = "0.11"
 default-features = false
-features = [ "bevy_text", "bevy_ui", "bevy_render", "bevy_sprite", "bevy_asset" ]
+features = ["bevy_text", "bevy_ui", "bevy_render", "bevy_sprite", "bevy_asset"]
 
 [features]
-"examples" = [ "bevy/bevy_winit", "bevy/png", "bevy/bevy_core_pipeline", "bevy/bevy_text" ]
+"examples" = [
+    "bevy/bevy_winit",
+    "bevy/png",
+    "bevy/bevy_core_pipeline",
+    "bevy/bevy_text",
+]
 
 [[example]]
 name = "change_size"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "content"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "full"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "multi_content_with_content_map"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "multi_content_with_system"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "multiple_same_components"
-required-features = [ "examples" ]
+required-features = ["examples"]
 
 [[example]]
 name = "plugin"
-required-features = [ "examples" ]
+required-features = ["examples"]
